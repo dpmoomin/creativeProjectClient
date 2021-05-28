@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="main.controller.candidateListController"
+            prefHeight="540.0" prefWidth="512.0">
+   <children>
+      <ImageView fitHeight="60.0" fitWidth="512.0">
+         <image>
+            <Image url="@../img/메인상단.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/실시간 투개표 현황.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/역대 당선 추이2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/후보자 및 선거 정보2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="68.0" layoutX="130.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/빈공간.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="61.0" layoutX="322.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/빈공간.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="147.0">
+         <image>
+            <Image url="@../img/이재명 사진.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="147.0">
+         <image>
+            <Image url="@../img/안철수 사진.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="147.0">
+         <image>
+            <Image url="@../img/오세훈 사진.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="293.0">
+         <image>
+            <Image url="@../img/문재인 사진.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="293.0">
+         <image>
+            <Image url="@../img/홍준표 사진.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="42.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 1번 이제명" />
+      <Text layoutX="207.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호2번 안철수" />
+      <Text layoutX="391.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호3번 오세훈" />
+      <Text layoutX="42.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호4번 홍준표" />
+      <Text layoutX="207.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호5번 문재인" />
+      <ImageView fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="68.0">
+         <image>
+            <Image url="@../img/선거정보 대통령 선거.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
