@@ -14,8 +14,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class electionInfoController implements Initializable {
+public class mainViewController implements Initializable {
 	@FXML private ImageView liveVoteInfoBtn;
+	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private ImageView electionHistoryInfoBtn;
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
@@ -24,6 +25,12 @@ public class electionInfoController implements Initializable {
       	    	 changeLiveVoteInfo();
         	  };
        });
+          
+          candidateAndElectionInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+     	     public void handle(MouseEvent event) {
+     	    	 changeCandidateAndElectionInfo();
+     	     };
+       });
 
           electionHistoryInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
      	     public void handle(MouseEvent event) {
@@ -31,7 +38,6 @@ public class electionInfoController implements Initializable {
      	     };
        });
     }
-    
     
     public void changeLiveVoteInfo()
     {
@@ -50,6 +56,26 @@ public class electionInfoController implements Initializable {
     	}
     	catch(Exception e) { System.out.println("error");}
     }
+    
+    public void changeCandidateAndElectionInfo()
+    {
+    	try
+    	{
+    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/electionInfo.fxml"));
+    	Scene scene = new Scene(main,512,540);
+        	Thread thread = new Thread() {
+        		public void run() {
+    	    		Stage primaryStage = (Stage) candidateAndElectionInfoBtn.getScene().getWindow();
+        			Platform.runLater(()->{primaryStage.setScene(scene);});
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) { System.out.println("error");}
+    }
+    
+
     
     public void changeElectionHistoryInfo()
     {

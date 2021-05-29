@@ -14,34 +14,33 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class electionInfoController implements Initializable {
-	@FXML private ImageView liveVoteInfoBtn;
+public class liveVoteInfoController implements Initializable {
+	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private ImageView electionHistoryInfoBtn;
-    @Override
-    public void initialize(URL location, ResourceBundle resoruces) {
-          liveVoteInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
-              public void handle(MouseEvent event) {
-      	    	 changeLiveVoteInfo();
-        	  };
-       });
 
-          electionHistoryInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
-     	     public void handle(MouseEvent event) {
-     	    	 changeElectionHistoryInfo();
-     	     };
-       });
+    public void initialize(URL location, ResourceBundle resoruces) {
+    	candidateAndElectionInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+    		public void handle(MouseEvent event) {
+    			changeCandidateAndElectionInfo();
+    			};
+    	});
+
+    	electionHistoryInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+    		public void handle(MouseEvent event) {
+    			changeElectionHistoryInfo();
+     	     	};
+    	});
     }
     
-    
-    public void changeLiveVoteInfo()
+    public void changeCandidateAndElectionInfo()
     {
     	try
     	{
-    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/liveVoteInfo.fxml"));
+    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/electionInfo.fxml"));
     	Scene scene = new Scene(main,512,540);
         	Thread thread = new Thread() {
         		public void run() {
-    	    		Stage primaryStage = (Stage) liveVoteInfoBtn.getScene().getWindow();
+    	    		Stage primaryStage = (Stage) candidateAndElectionInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
         		}
         	};
@@ -50,6 +49,8 @@ public class electionInfoController implements Initializable {
     	}
     	catch(Exception e) { System.out.println("error");}
     }
+    
+
     
     public void changeElectionHistoryInfo()
     {
