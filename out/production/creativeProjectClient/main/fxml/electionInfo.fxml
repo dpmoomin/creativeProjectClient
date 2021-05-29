@@ -14,12 +14,12 @@
             <Image url="@../img/메인상단.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
+      <ImageView fx:id = "liveVoteInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
          <image>
             <Image url="@../img/실시간 투개표 현황.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
+      <ImageView fx:id = "electionHistoryInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
          <image>
             <Image url="@../img/역대 당선 추이2.png" />
          </image>

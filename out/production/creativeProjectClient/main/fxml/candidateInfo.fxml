@@ -8,11 +8,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="main.controller.candidateInfoController"
-            prefHeight="540.0" prefWidth="512.0">
+<AnchorPane prefHeight="540.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.candidateInfoController">
     <children>
         <ImageView fitHeight="60.0" fitWidth="512.0">
             <image>
@@ -69,13 +65,13 @@
         <TextArea layoutX="290.0" layoutY="228.0" prefHeight="77.0" prefWidth="161.0" />
         <ImageView fitHeight="53.0" fitWidth="63.0" layoutX="126.0" layoutY="310.0">
             <image>
-                <Image url="@../../../Downloads/zoom-increasing-symbol.png" />
+                <Image url="@../img/zoom-increasing-symbol.png" />
             </image>
         </ImageView>
         <Text layoutX="112.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="생애 및 활동사진" />
         <ImageView fitHeight="60.0" fitWidth="74.0" layoutX="25.0" layoutY="302.0">
             <image>
-                <Image url="@../../../Downloads/home%20(1).png" />
+                <Image url="@../img/home%20(1).png" />
             </image>
         </ImageView>
         <Text layoutX="38.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="메인으로" />
