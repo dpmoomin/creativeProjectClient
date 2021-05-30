@@ -4,12 +4,14 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.PieChart;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -17,8 +19,15 @@ import javafx.stage.Stage;
 public class liveVoteInfoController implements Initializable {
 	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private ImageView electionHistoryInfoBtn;
+	@FXML private PieChart voteCountingRate;
 
     public void initialize(URL location, ResourceBundle resoruces) {
+    	//파이차트 데이터 추가
+    	/* voteCountingRate.setData(FXCollections.observableArrayList(
+    		    new PieChart.Data("개표", 65),  
+
+    		    new PieChart.Data("", 35)
+    		)); */
     	candidateAndElectionInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
     		public void handle(MouseEvent event) {
     			changeCandidateAndElectionInfo();
