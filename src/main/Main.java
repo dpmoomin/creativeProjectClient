@@ -5,12 +5,17 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        Font.loadFont(getClass().getResourceAsStream("font/BMHANNA_11yrs_ttf.ttf"), 16);
+        Font.loadFont(getClass().getResourceAsStream("font/NanumSquareR.ttf"), 16);
+        Font.loadFont(getClass().getResourceAsStream("font/NanumSquareB.ttf"), 16);
+        Font.loadFont(getClass().getResourceAsStream("font/NanumSquareEB.ttf"), 16);
         Parent root = FXMLLoader.load(getClass().getResource("fxml/logoView.fxml"));
         primaryStage.setTitle("logoView");
         primaryStage.setScene(new Scene(root, 512, 540));

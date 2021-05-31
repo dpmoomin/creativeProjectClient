@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="main.controller.electionInfoController"
-            prefHeight="540.0" prefWidth="512.0">
+<AnchorPane prefHeight="540.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.electionInfoController">
    <children>
       <ImageView fitHeight="60.0" fitWidth="512.0">
          <image>
             <Image url="@../img/메인상단.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "liveVoteInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
+      <ImageView fx:id="liveVoteInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
          <image>
             <Image url="@../img/실시간 투개표 현황.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "electionHistoryInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
+      <ImageView fx:id="electionHistoryInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
          <image>
             <Image url="@../img/역대 당선 추이2.png" />
          </image>
@@ -39,20 +40,25 @@
             <Image url="@../img/빈공간.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="295.0">
+      <ImageView fx:id="election1" fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="295.0">
          <image>
             <Image url="@../img/선거 정보 서울시장 선거.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="209.0">
+      <ImageView fx:id="election2" fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="209.0">
          <image>
             <Image url="@../img/선거 정보 국회의원 선거.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="123.0">
+      <ImageView fx:id="election3" fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="123.0">
          <image>
             <Image url="@../img/선거정보 대통령 선거.png" />
          </image>
       </ImageView>
+      <Text layoutX="220.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="선거 목록">
+         <font>
+            <Font name ="BM HANNA 11yrs old" size="22.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

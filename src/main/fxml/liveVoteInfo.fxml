@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.liveVoteInfoController" >
+<AnchorPane stylesheets = "@../font/style.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.liveVoteInfoController">
    <children>
       <ImageView fitHeight="60.0" fitWidth="512.0">
          <image>
@@ -16,12 +25,12 @@
             <Image url="@../img/실시간%20투개표%20현황2.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "electionHistoryInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
+      <ImageView fx:id="electionHistoryInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
          <image>
             <Image url="@../img/역대%20당선%20추이2.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "candidateAndElectionInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
+      <ImageView fx:id="candidateAndElectionInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
          <image>
             <Image url="@../img/후보자%20및%20선거%20정보.png" />
          </image>
@@ -36,20 +45,141 @@
             <Image url="@../img/빈공간.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="262.0" fitWidth="340.0" layoutX="86.0" layoutY="60.0">
+      <Circle fill="#4177a1" layoutX="257.0" layoutY="191.5" radius="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Arc fill="#aeaeae" layoutX="257.0" layoutY="191.5" length="235.0" radiusX="50.5" radiusY="50.5" startAngle="90.0" stroke="#aeaeae" strokeType="INSIDE" strokeWidth="0.0" type="ROUND">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </Arc>
+      <Circle fill="WHITE" layoutX="257.0" layoutY="191.5" radius="30.0" stroke="WHITE" strokeType="INSIDE" />
+      <Text layoutX="237.0" layoutY="259.5" strokeType="OUTSIDE" strokeWidth="0.0" text="개표율">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="224.0" layoutY="196.5" strokeType="OUTSIDE" strokeWidth="0.0" text="34.66%" textAlignment="CENTER" wrappingWidth="68.0">
+         <font>
+            <Font name="BM HANNA 11yrs old" size="14.0" />
+         </font></Text>
+      <SplitMenuButton alignment="CENTER" layoutX="76.0" layoutY="67.5" mnemonicParsing="false" prefHeight="20.0" prefWidth="360.0" text="- 선거 목록 -" textAlignment="CENTER">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="107.0" layoutX="47.0" layoutY="136.5" stroke="BLACK" strokeType="INSIDE" width="117.0" />
+      <ImageView layoutX="56.0" layoutY="140.5">
          <image>
-            <Image url="@../img/실시간%20투개표%20현황%20예시%20사진.png" />
+            <Image url="@../img/catogram/파랑/서울-파랑-1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="89.0" fitWidth="512.0" layoutX="1.0" layoutY="330.0">
+      <Line endX="30.0" layoutX="122.0" layoutY="228.5" rotate="60.0" startX="-30.0" />
+      <Line endX="10.0" layoutX="148.0" layoutY="254.5" startX="-10.0" />
+      <Text layoutX="162.0" layoutY="261.5" strokeType="OUTSIDE" strokeWidth="0.0" text="서울">
+         <font>
+            <Font name="BM HANNA 11yrs old" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#aeaeae" height="20.0" layoutX="22.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" width="469.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="20.0" layoutX="22.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" width="257.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3f72e8" height="20.0" layoutX="291.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <ImageView fitHeight="85.0" fitWidth="80.0" layoutX="22.0" layoutY="265.0">
          <image>
-            <Image url="@../img/실시간%20투개표%20현황%20예시%20사진2.png" />
+            <Image url="@../img/홍준표%20사진.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="37.0" fitWidth="48.0" layoutX="232.0" layoutY="304.0">
+      <ImageView fitHeight="85.0" fitWidth="80.0" layoutX="411.0" layoutY="265.0">
          <image>
-            <Image url="@../img/흰색%20빈공간.png" />
+            <Image url="@../img/문재인%20사진.jpg" />
          </image>
       </ImageView>
+      <Text layoutX="326.0" layoutY="167.5" strokeType="OUTSIDE" strokeWidth="0.0" text="투표율">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="326.0" layoutY="197.5" strokeType="OUTSIDE" strokeWidth="0.0" text="개표수">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="320.0" layoutY="227.5" strokeType="OUTSIDE" strokeWidth="0.0" text="선거인수">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="375.0" layoutY="152.5" prefHeight="20.0" prefWidth="100.0" />
+      <TextField layoutX="375.0" layoutY="182.5" prefHeight="20.0" prefWidth="100.0" />
+      <TextField layoutX="375.0" layoutY="212.5" prefHeight="20.0" prefWidth="100.0" />
+      <Text layoutX="480.0" layoutY="167.5" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="480.0" layoutY="197.5" strokeType="OUTSIDE" strokeWidth="0.0" text="명">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="480.0" layoutY="227.5" strokeType="OUTSIDE" strokeWidth="0.0" text="명">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#0777ff" layoutX="160.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="서울 시도지사 선거" textAlignment="CENTER" wrappingWidth="200.0">
+         <font>
+            <Font name = "BM HANNA 11yrs old" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#ff1f1f" layoutX="22.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="56.02%" wrappingWidth="80.0">
+         <font>
+            <Font name = "BM HANNA 11yrs old" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#3f72e8" layoutX="411.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40.99%" textAlignment="RIGHT" wrappingWidth="80.0">
+         <font>
+            <Font name ="BM HANNA 11yrs old" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#3f72e8" layoutX="360.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="692,380표" textAlignment="RIGHT" wrappingWidth="130.0">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#ff1f1f" layoutX="22.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="946,207표" wrappingWidth="130.0">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#0777ff" layoutX="110.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="홍준표" wrappingWidth="80.0">
+         <font>
+            <Font name="BM HANNA 11yrs old" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#0777ff" layoutX="325.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="문재인" textAlignment="RIGHT" wrappingWidth="80.0">
+         <font>
+            <Font name="BM HANNA 11yrs old" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="112.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 1" wrappingWidth="80.0">
+         <font>
+            <Font name="BM HANNA 11yrs old" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="322.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 2" textAlignment="RIGHT" wrappingWidth="80.0">
+         <font>
+            <Font name="BM HANNA 11yrs old" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="112.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="국민의 힘" wrappingWidth="80.0"> 
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="322.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="더불어민주당" textAlignment="RIGHT" wrappingWidth="80.0">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
