@@ -15,10 +15,10 @@
    <children>
       <ImageView fitHeight="540.0" fitWidth="512.0">
          <image>
-            <Image url="@../img/슬기로운%20정치생활1.png" />
+            <Image url="@../img/슬기로운_정치생활1.png" />
          </image>
       </ImageView>
-      <AnchorPane prefHeight="540.0" prefWidth="512.0" stylesheets="@../../../eclipse-workspace/HouseholdLedger/src/package1/style.css">
+      <AnchorPane prefHeight="540.0" prefWidth="512.0" stylesheets="@../font/style.css">
          <children>
             <Label id="main" layoutX="160.0" layoutY="344.0" text="Copyright 2021. All rights reserved">
                <font>

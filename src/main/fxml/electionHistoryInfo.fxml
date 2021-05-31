@@ -12,7 +12,7 @@
    <children>
       <ImageView fitHeight="359.0" fitWidth="512.0" layoutY="60.0">
          <image>
-            <Image url="@../img/흰색%20빈공간.png" />
+            <Image url="@../img/흰색_빈공간.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="60.0" fitWidth="512.0">
@@ -22,17 +22,17 @@
       </ImageView>
       <ImageView fx:id="liveVoteInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
          <image>
-            <Image url="@../img/실시간%20투개표%20현황.png" />
+            <Image url="@../img/실시간_투개표_현황.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
          <image>
-            <Image url="@../img/역대%20당선%20추이.png" />
+            <Image url="@../img/역대_당선_추이.png" />
          </image>
       </ImageView>
       <ImageView fx:id="candidateAndElectionInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
          <image>
-            <Image url="@../img/후보자%20및%20선거%20정보.png" />
+            <Image url="@../img/후보자_및_선거_정보.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="68.0" layoutX="130.0" layoutY="420.0">
@@ -47,17 +47,17 @@
       </ImageView>
       <ImageView fitHeight="103.0" fitWidth="120.0" layoutX="43.0" layoutY="204.0">
          <image>
-            <Image url="@../img/대통령별%20당선%20추이.png" />
+            <Image url="@../img/대통령별_당선_추이.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="103.0" fitWidth="120.0" layoutX="196.0" layoutY="204.0">
          <image>
-            <Image url="@../img/국회의원%20임기별%20당선%20추이.png" />
+            <Image url="@../img/국회의원_임기별_당선_추이.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="103.0" fitWidth="120.0" layoutX="351.0" layoutY="210.0">
          <image>
-            <Image url="@../img/광역시별%20당선%20추이.png" />
+            <Image url="@../img/광역시별_당선_추이.png" />
          </image>
       </ImageView>
       <Text layoutX="197.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="역대 당선 추이" >

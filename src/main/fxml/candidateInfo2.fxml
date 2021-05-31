@@ -18,17 +18,17 @@
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
          <image>
-            <Image url="@../img/실시간 투개표 현황.png" />
+            <Image url="@../img/실시간_투개표_현황.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
          <image>
-            <Image url="@../img/역대 당선 추이2.png" />
+            <Image url="@../img/역대_당선_추이2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
          <image>
-            <Image url="@../img/후보자 및 선거 정보2.png" />
+            <Image url="@../img/후보자_및_선거_정보2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="68.0" layoutX="130.0" layoutY="420.0">
@@ -46,7 +46,7 @@
       <TextArea layoutX="96.0" layoutY="256.0" prefHeight="77.0" prefWidth="334.0" />
       <ImageView fitHeight="60.0" fitWidth="74.0" layoutX="219.0" layoutY="339.0">
          <image>
-            <Image url="@../img/home (1).png" />
+            <Image url="@../img/home_(1).png" />
          </image>
       </ImageView>
       <Text layoutX="232.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="메인으로" />

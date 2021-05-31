@@ -17,17 +17,17 @@
       </ImageView>
       <ImageView fx:id="liveVoteInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
          <image>
-            <Image url="@../img/실시간 투개표 현황.png" />
+            <Image url="@../img/실시간_투개표_현황.png" />
          </image>
       </ImageView>
       <ImageView fx:id="electionHistoryInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
          <image>
-            <Image url="@../img/역대 당선 추이2.png" />
+            <Image url="@../img/역대_당선_추이2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
          <image>
-            <Image url="@../img/후보자 및 선거 정보2.png" />
+            <Image url="@../img/후보자_및_선거_정보2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="68.0" layoutX="130.0" layoutY="420.0">
@@ -42,17 +42,17 @@
       </ImageView>
       <ImageView fx:id="election1" fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="295.0">
          <image>
-            <Image url="@../img/선거 정보 서울시장 선거.png" />
+            <Image url="@../img/선거_정보_서울시장_선거.png" />
          </image>
       </ImageView>
       <ImageView fx:id="election2" fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="209.0">
          <image>
-            <Image url="@../img/선거 정보 국회의원 선거.png" />
+            <Image url="@../img/선거_정보_국회의원_선거.png" />
          </image>
       </ImageView>
       <ImageView fx:id="election3" fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="123.0">
          <image>
-            <Image url="@../img/선거정보 대통령 선거.png" />
+            <Image url="@../img/선거정보_대통령_선거.png" />
          </image>
       </ImageView>
       <Text layoutX="220.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="선거 목록">

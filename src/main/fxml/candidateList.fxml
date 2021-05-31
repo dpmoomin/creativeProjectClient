@@ -17,17 +17,17 @@
       </ImageView>
       <ImageView fx:id="liveVoteInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
          <image>
-            <Image url="@../img/실시간 투개표 현황.png" />
+            <Image url="@../img/실시간_투개표_현황.png" />
          </image>
       </ImageView>
       <ImageView fx:id="electionHistoryInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
          <image>
-            <Image url="@../img/역대 당선 추이2.png" />
+            <Image url="@../img/역대_당선_추이2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
          <image>
-            <Image url="@../img/후보자 및 선거 정보2.png" />
+            <Image url="@../img/후보자_및_선거_정보2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="120.0" fitWidth="68.0" layoutX="130.0" layoutY="420.0">
@@ -42,27 +42,27 @@
       </ImageView>
       <ImageView fx:id="candidate1" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="147.0">
          <image>
-            <Image url="@../img/이재명 사진.jpg" />
+            <Image url="@../img/이재명_사진.jpg" />
          </image>
       </ImageView>
       <ImageView fx:id="candidate2" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="147.0">
          <image>
-            <Image url="@../img/안철수 사진.jpg" />
+            <Image url="@../img/안철수_사진.jpg" />
          </image>
       </ImageView>
       <ImageView fx:id="candidate3" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="147.0">
          <image>
-            <Image url="@../img/오세훈 사진.jpg" />
+            <Image url="@../img/오세훈_사진.jpg" />
          </image>
       </ImageView>
       <ImageView fx:id="candidate4" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="293.0">
          <image>
-            <Image url="@../img/문재인 사진.jpg" />
+            <Image url="@../img/문재인_사진.jpg" />
          </image>
       </ImageView>
       <ImageView fx:id="candidate5" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="293.0">
          <image>
-            <Image url="@../img/홍준표 사진.jpg" />
+            <Image url="@../img/홍준표_사진.jpg" />
          </image>
       </ImageView>
       <Text layoutX="44.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 1번 이제명">
@@ -92,7 +92,7 @@
       </Text>
       <ImageView fitHeight="60.0" fitWidth="450.0" layoutX="32.0" layoutY="68.0">
          <image>
-            <Image url="@../img/선거정보 대통령 선거.png" />
+            <Image url="@../img/선거정보_대통령_선거.png" />
          </image>
       </ImageView>
    </children>
