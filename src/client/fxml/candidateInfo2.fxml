@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="main.controller.candidateInfo2Controller"
+            fx:controller="client.controller.candidateInfo2Controller"
             prefHeight="540.0" prefWidth="512.0">
    <children>
       <ImageView fitHeight="60.0" fitWidth="512.0">

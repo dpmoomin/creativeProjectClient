@@ -1,10 +1,9 @@
-package main.controller;
+package client.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.application.Platform;
-import javafx.collections.FXCollections;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,9 +21,9 @@ public class liveVoteInfoController implements Initializable {
 	@FXML private PieChart voteCountingRate;
 
     public void initialize(URL location, ResourceBundle resoruces) {
-    	//ÆÄÀÌÂ÷Æ® µ¥ÀÌÅÍ Ãß°¡
+    	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
     	/* voteCountingRate.setData(FXCollections.observableArrayList(
-    		    new PieChart.Data("°³Ç¥", 65),  
+    		    new PieChart.Data("ï¿½ï¿½Ç¥", 65),  
 
     		    new PieChart.Data("", 35)
     		)); */

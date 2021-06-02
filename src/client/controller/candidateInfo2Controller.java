@@ -1,4 +1,4 @@
-package main.controller;
+package client.controller;
 
 public class candidateInfo2Controller {
 }

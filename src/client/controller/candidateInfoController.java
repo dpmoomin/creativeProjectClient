@@ -1,4 +1,4 @@
-package main.controller;
+package client.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,22 +14,21 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class electionHistoryInfoController implements Initializable {
+public class candidateInfoController implements Initializable {
 	@FXML private ImageView liveVoteInfoBtn;
-	@FXML private ImageView candidateAndElectionInfoBtn;
+	@FXML private ImageView electionHistoryInfoBtn;
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
-          liveVoteInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
-              public void handle(MouseEvent event) {
-      	    	 changeLiveVoteInfo();
-        	  };
-       });
-          
-          candidateAndElectionInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
-     	     public void handle(MouseEvent event) {
-     	    	 changeCandidateAndElectionInfo();
-     	     };
-       });
+    	liveVoteInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            public void handle(MouseEvent event) {
+    	    	 changeLiveVoteInfo();
+      	  };
+     });
+          electionHistoryInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+      	     public void handle(MouseEvent event) {
+      	    	 changeElectionHistoryInfo();
+      	     };
+        });
     }
     
     public void changeLiveVoteInfo()
@@ -50,15 +49,15 @@ public class electionHistoryInfoController implements Initializable {
     	catch(Exception e) { System.out.println("error");}
     }
     
-    public void changeCandidateAndElectionInfo()
+    public void changeElectionHistoryInfo()
     {
     	try
     	{
-    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/electionInfo.fxml"));
+    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/electionHistoryInfo.fxml"));
     	Scene scene = new Scene(main,512,540);
         	Thread thread = new Thread() {
         		public void run() {
-    	    		Stage primaryStage = (Stage) candidateAndElectionInfoBtn.getScene().getWindow();
+    	    		Stage primaryStage = (Stage) electionHistoryInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
         		}
         	};
