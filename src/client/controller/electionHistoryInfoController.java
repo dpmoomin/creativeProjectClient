@@ -17,6 +17,9 @@ import javafx.stage.Stage;
 public class electionHistoryInfoController implements Initializable {
 	@FXML private ImageView liveVoteInfoBtn;
 	@FXML private ImageView candidateAndElectionInfoBtn;
+	@FXML private ImageView presidentElectionHistoryInfoBtn;
+	@FXML private ImageView nationalAssemblyElectionHistoryInfoBtn;
+	@FXML private ImageView localElectionHistoryInfoBtn;
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
           liveVoteInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -30,6 +33,22 @@ public class electionHistoryInfoController implements Initializable {
      	    	 changeCandidateAndElectionInfo();
      	     };
        });
+         
+          presidentElectionHistoryInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+      	     public void handle(MouseEvent event) {
+      	    	 changePresidentElectionHistoryInfo();
+      	     };
+        });
+          nationalAssemblyElectionHistoryInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+       	     public void handle(MouseEvent event) {
+       	    	 changeNationalAssemblyElectionHistoryInfo();
+       	     };
+         });
+          localElectionHistoryInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+        	     public void handle(MouseEvent event) {
+        	    	 changeLocalElectionHistoryInfo();
+        	     };
+          });
     }
     
     public void changeLiveVoteInfo()
@@ -59,6 +78,60 @@ public class electionHistoryInfoController implements Initializable {
         	Thread thread = new Thread() {
         		public void run() {
     	    		Stage primaryStage = (Stage) candidateAndElectionInfoBtn.getScene().getWindow();
+        			Platform.runLater(()->{primaryStage.setScene(scene);});
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) { System.out.println("error");}
+    }
+    
+    public void changePresidentElectionHistoryInfo()
+    {
+    	try
+    	{
+    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/presidentElectionHistoryInfo.fxml"));
+    	Scene scene = new Scene(main,512,540);
+        	Thread thread = new Thread() {
+        		public void run() {
+    	    		Stage primaryStage = (Stage) presidentElectionHistoryInfoBtn.getScene().getWindow();
+        			Platform.runLater(()->{primaryStage.setScene(scene);});
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) { System.out.println("error");}
+    }
+    
+    public void changeNationalAssemblyElectionHistoryInfo()
+    {
+    	try
+    	{
+    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/nationalAssemblyElectionHistoryInfo.fxml"));
+    	Scene scene = new Scene(main,512,540);
+        	Thread thread = new Thread() {
+        		public void run() {
+    	    		Stage primaryStage = (Stage) nationalAssemblyElectionHistoryInfoBtn.getScene().getWindow();
+        			Platform.runLater(()->{primaryStage.setScene(scene);});
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) { System.out.println("error");}
+    }
+    
+    public void changeLocalElectionHistoryInfo()
+    {
+    	try
+    	{
+    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/localElectionHistoryInfo.fxml"));
+    	Scene scene = new Scene(main,512,540);
+        	Thread thread = new Thread() {
+        		public void run() {
+    	    		Stage primaryStage = (Stage) localElectionHistoryInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
         		}
         	};

@@ -13,27 +13,28 @@ import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class electionInfoController implements Initializable {
+public class presidentElectionHistoryInfoController implements Initializable {
 	@FXML private ImageView liveVoteInfoBtn;
-	@FXML private ImageView electionHistoryInfoBtn;
-	@FXML private ScrollPane electionInfo;
+	@FXML private ImageView candidateAndElectionInfoBtn;
+	@FXML private ScrollPane presidentChartView;
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
-    	changeElectionInfo();
-    	liveVoteInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent event) {
-    	    	 changeLiveVoteInfo();
-      	  };
-     });
-          electionHistoryInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
-      	     public void handle(MouseEvent event) {
-      	    	 changeElectionHistoryInfo();
-      	     };
-        });
+    	changePresidentChartView();
+          liveVoteInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+              public void handle(MouseEvent event) {
+      	    	 changeLiveVoteInfo();
+        	  };
+       });
+          
+          candidateAndElectionInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+     	     public void handle(MouseEvent event) {
+     	    	 changeCandidateAndElectionInfo();
+     	     };
+       });
     }
-    
     
     public void changeLiveVoteInfo()
     {
@@ -53,15 +54,15 @@ public class electionInfoController implements Initializable {
     	catch(Exception e) { System.out.println("error");}
     }
     
-    public void changeElectionHistoryInfo()
+    public void changeCandidateAndElectionInfo()
     {
     	try
     	{
-    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/electionHistoryInfo.fxml"));
+    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/electionInfo.fxml"));
     	Scene scene = new Scene(main,512,540);
         	Thread thread = new Thread() {
         		public void run() {
-    	    		Stage primaryStage = (Stage) electionHistoryInfoBtn.getScene().getWindow();
+    	    		Stage primaryStage = (Stage) candidateAndElectionInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
         		}
         	};
@@ -71,12 +72,12 @@ public class electionInfoController implements Initializable {
     	catch(Exception e) { System.out.println("error");}
     }
     
-    public void changeElectionInfo()
+    public void changePresidentChartView()
     {
     	try 
     	{
-    		Parent root = FXMLLoader.load(getClass().getResource("../fxml/electionInfoAdd.fxml"));
-    		electionInfo.setContent(root);
+    		Parent chartView = FXMLLoader.load(getClass().getResource("../fxml/presidentChartView.fxml"));
+    		presidentChartView.setContent(chartView);
     	}
     	catch(Exception e) { System.out.println("error");}
     }

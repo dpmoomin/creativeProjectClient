@@ -21,12 +21,6 @@ public class liveVoteInfoController implements Initializable {
 	@FXML private PieChart voteCountingRate;
 
     public void initialize(URL location, ResourceBundle resoruces) {
-    	//������Ʈ ������ �߰�
-    	/* voteCountingRate.setData(FXCollections.observableArrayList(
-    		    new PieChart.Data("��ǥ", 65),  
-
-    		    new PieChart.Data("", 35)
-    		)); */
     	candidateAndElectionInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
     		public void handle(MouseEvent event) {
     			changeCandidateAndElectionInfo();

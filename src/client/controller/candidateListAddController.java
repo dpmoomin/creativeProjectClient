@@ -14,9 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-public class candidateListController implements Initializable {
-	@FXML private ImageView liveVoteInfoBtn;
-	@FXML private ImageView electionHistoryInfoBtn;
+public class candidateListAddController implements Initializable {
 	@FXML private ImageView candidate1;
 	@FXML private ImageView candidate2;
 	@FXML private ImageView candidate3;
@@ -24,17 +22,6 @@ public class candidateListController implements Initializable {
 	@FXML private ImageView candidate5;
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
-    	liveVoteInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent event) {
-    	    	 changeLiveVoteInfo();
-      	  };
-     });
-          electionHistoryInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
-      	     public void handle(MouseEvent event) {
-      	    	 changeElectionHistoryInfo();
-      	     };
-        });
-
           candidate1.setOnMouseClicked(new EventHandler<MouseEvent>() {
       	     public void handle(MouseEvent event) {
       	    	 changeCandidateInfo();
@@ -66,42 +53,6 @@ public class candidateListController implements Initializable {
       	    	 changeCandidateInfo();
       	     };
         });
-    }
-    
-    public void changeLiveVoteInfo()
-    {
-    	try
-    	{
-    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/liveVoteInfo.fxml"));
-    	Scene scene = new Scene(main,512,540);
-        	Thread thread = new Thread() {
-        		public void run() {
-    	    		Stage primaryStage = (Stage) liveVoteInfoBtn.getScene().getWindow();
-        			Platform.runLater(()->{primaryStage.setScene(scene);});
-        		}
-        	};
-        	thread.setDaemon(true);
-        	thread.start();
-    	}
-    	catch(Exception e) { System.out.println("error");}
-    }
-    
-    public void changeElectionHistoryInfo()
-    {
-    	try
-    	{
-    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/electionHistoryInfo.fxml"));
-    	Scene scene = new Scene(main,512,540);
-        	Thread thread = new Thread() {
-        		public void run() {
-    	    		Stage primaryStage = (Stage) electionHistoryInfoBtn.getScene().getWindow();
-        			Platform.runLater(()->{primaryStage.setScene(scene);});
-        		}
-        	};
-        	thread.setDaemon(true);
-        	thread.start();
-    	}
-    	catch(Exception e) { System.out.println("error");}
     }
     public void changeCandidateInfo()
     {
