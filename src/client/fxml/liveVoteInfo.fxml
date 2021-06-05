@@ -141,7 +141,7 @@
             <Font name ="BM HANNA 11yrs old" size="22.0" />
          </font>
       </Text>
-      <Text fill="#3f72e8" layoutX="360.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="692,380표" textAlignment="RIGHT" wrappingWidth="130.0">
+      <Text fill= "#3f72e8" layoutX="360.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="692,380표" textAlignment="RIGHT" wrappingWidth="130.0">
          <font>
             <Font name="NanumSquare" size="14.0" />
          </font>
