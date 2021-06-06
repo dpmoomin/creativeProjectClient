@@ -9,7 +9,6 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
     @Override
     public void start(Stage primaryStage) throws Exception{
         Font.loadFont(getClass().getResourceAsStream("font/BMHANNA_11yrs_ttf.ttf"), 16);
