@@ -10,15 +10,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.SplitMenuButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class candidateListAddController implements Initializable {
-	@FXML private Text election1Title; // 선거1 이름
-	@FXML private Text election1VoteDay; // 선거1 선거일
-	@FXML private ImageView election1Mark; // 선거1 선거구분 마크
+public class candidateList2AddController implements Initializable {
+	@FXML private Text election2Title; // 선거2 이름
+	@FXML private Text election2VoteDay; // 선거2 선거일
+	@FXML private ImageView election2Mark; // 선거2 선거구분 마크
+	@FXML private SplitMenuButton constituencyList; // 선거구 목록
 	@FXML private ImageView candidate1; // 후보1 이미지
 	@FXML private ImageView candidate2; // 후보2 이미지
 	@FXML private ImageView candidate3; // 후보3 이미지

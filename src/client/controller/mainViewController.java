@@ -49,6 +49,7 @@ public class mainViewController implements Initializable {
         		public void run() {
     	    		Stage primaryStage = (Stage) liveVoteInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
+        			Platform.runLater(()->{primaryStage.setTitle("실시간 투개표 현황");});
         		}
         	};
         	thread.setDaemon(true);
@@ -67,6 +68,7 @@ public class mainViewController implements Initializable {
         		public void run() {
     	    		Stage primaryStage = (Stage) candidateAndElectionInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
+        			Platform.runLater(()->{primaryStage.setTitle("후보자 및 선거 정보");});
         		}
         	};
         	thread.setDaemon(true);
@@ -87,6 +89,7 @@ public class mainViewController implements Initializable {
         		public void run() {
     	    		Stage primaryStage = (Stage) electionHistoryInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
+        			Platform.runLater(()->{primaryStage.setTitle("역대 당선 추이");});
         		}
         	};
         	thread.setDaemon(true);
