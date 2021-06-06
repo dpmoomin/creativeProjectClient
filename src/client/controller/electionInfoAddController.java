@@ -1,5 +1,10 @@
 package client.controller;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -21,6 +26,7 @@ public class electionInfoAddController implements Initializable {
 	@FXML private ImageView election2;
 	@FXML private ImageView election3;
 	@FXML private AnchorPane electionInfo;
+
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
           election1.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -41,6 +47,7 @@ public class electionInfoAddController implements Initializable {
       	     };
         });
     }
+
     
     public void changeElection1()
     {
