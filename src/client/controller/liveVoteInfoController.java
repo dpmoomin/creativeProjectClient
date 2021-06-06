@@ -10,7 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.chart.PieChart;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -18,9 +18,10 @@ import javafx.stage.Stage;
 public class liveVoteInfoController implements Initializable {
 	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private ImageView electionHistoryInfoBtn;
-	@FXML private PieChart voteCountingRate;
+	@FXML private ScrollPane liveVoteInfo;
 
     public void initialize(URL location, ResourceBundle resoruces) {
+    	changeLiveVoteInfo();
     	candidateAndElectionInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
     		public void handle(MouseEvent event) {
     			changeCandidateAndElectionInfo();
@@ -68,6 +69,16 @@ public class liveVoteInfoController implements Initializable {
         	};
         	thread.setDaemon(true);
         	thread.start();
+    	}
+    	catch(Exception e) { System.out.println("error");}
+    }
+    
+    public void changeLiveVoteInfo()
+    {
+    	try 
+    	{
+    		Parent chartView = FXMLLoader.load(getClass().getResource("../fxml/liveVoteInfoAdd.fxml"));
+    		liveVoteInfo.setContent(chartView);
     	}
     	catch(Exception e) { System.out.println("error");}
     }
