@@ -62,7 +62,7 @@
       </ImageView>
       <Text layoutX="197.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="역대 당선 추이" >
          <font>
-            <Font name ="BM HANNA 11yrs old" size="22.0" />
+            <Font name="NanumSquare" size="22.0" />
          </font>
       </Text>
    </children>

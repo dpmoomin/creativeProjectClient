@@ -42,7 +42,7 @@
         </ImageView>
         <Text layoutX="205.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="후보자 정보">
            <font>
-              <Font name ="BM HANNA 11yrs old" size="22.0" />
+              <Font name="BM HANNA 11yrs old" size="22.0" />
            </font>
         </Text>
         <Text layoutX="236.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="이름">
@@ -75,42 +75,31 @@
               <Font name="NanumSquare" size="14.0" />
            </font>
         </Text>
-        <TextField layoutX="300.0" layoutY="104.0" prefHeight="22.0" prefWidth="161.0" />
-        <TextField layoutX="300.0" layoutY="133.0" prefHeight="22.0" prefWidth="161.0" />
-        <TextField layoutX="300.0" layoutY="163.0" prefHeight="22.0" prefWidth="161.0" />
-        <TextField layoutX="300.0" layoutY="195.0" prefHeight="22.0" prefWidth="161.0" />
-        <ImageView fitHeight="105.0" fitWidth="105.0" layoutX="52.0" layoutY="107.0">
+        <TextField fx:id="name" alignment="CENTER" layoutX="300.0" layoutY="104.0" prefHeight="22.0" prefWidth="161.0" />
+        <TextField fx:id="number" alignment="CENTER" layoutX="300.0" layoutY="133.0" prefHeight="22.0" prefWidth="161.0" />
+        <TextField fx:id="partyName" alignment="CENTER" layoutX="300.0" layoutY="163.0" prefHeight="22.0" prefWidth="161.0" />
+        <TextField fx:id="birth" alignment="CENTER" layoutX="300.0" layoutY="195.0" prefHeight="22.0" prefWidth="161.0" />
+        <ImageView fx:id="candidateImage" fitHeight="105.0" fitWidth="105.0" layoutX="52.0" layoutY="107.0">
             <image>
                 <Image url="@../img/문재인_사진.jpg" />
             </image>
         </ImageView>
-        <ImageView fitHeight="53.0" fitWidth="105.0" layoutX="52.0" layoutY="225.0">
+        <ImageView fx:id="candidatePartyImage" fitHeight="53.0" fitWidth="105.0" layoutX="52.0" layoutY="225.0">
             <image>
                 <Image url="@../img/더불어_민주당.jpg" />
             </image>
         </ImageView>
-        <TextArea layoutX="300.0" layoutY="318.0" prefHeight="77.0" prefWidth="161.0" />
-        <TextArea layoutX="300.0" layoutY="228.0" prefHeight="77.0" prefWidth="161.0" />
-        <ImageView fitHeight="53.0" fitWidth="63.0" layoutX="126.0" layoutY="310.0">
-            <image>
-                <Image url="@../img/zoom_increasing_symbol.png" />
-            </image>
-        </ImageView>
-        <Text layoutX="112.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="생애 및 활동사진">
-           <font>
-              <Font name="NanumSquare" size="14.0" />
-           </font>
-        </Text>
-        <ImageView fitHeight="60.0" fitWidth="74.0" layoutX="25.0" layoutY="305.0">
+        <TextArea fx:id="career" layoutX="300.0" layoutY="318.0" prefHeight="77.0" prefWidth="161.0" />
+        <TextArea fx:id="pledge" layoutX="300.0" layoutY="228.0" prefHeight="77.0" prefWidth="161.0" />
+        <ImageView fitHeight="60.0" fitWidth="74.0" layoutX="67.0" layoutY="305.0">
             <image>
                 <Image url="@../img/home_(1).png" />
             </image>
         </ImageView>
-        <Text layoutX="25.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="후보 목록으로">
+        <Text layoutX="65.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="후보 목록으로">
            <font>
               <Font name="NanumSquare" size="14.0" />
            </font>
         </Text>
     </children>
-
 </AnchorPane>
