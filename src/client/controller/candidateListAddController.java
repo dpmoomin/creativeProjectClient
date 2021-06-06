@@ -1,7 +1,5 @@
 package client.controller;
 
-import java.io.PrintWriter;
-import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -88,20 +86,11 @@ public class candidateListAddController implements Initializable {
         });
     }
     public void changeCandidateInfo()
-	{
+    {
     	try
     	{
-			Socket clSocket = new Socket("localhost", 9594);
-			PrintWriter pw = new PrintWriter(clSocket.getOutputStream(), true);
-			//BufferedReader br = new BufferedReader(new InputStreamReader(clSocket.getInputStream()));
-
-			pw.write("3");
-			pw.flush();
-			pw.close();
-			clSocket.close();
-
-    		Parent main = FXMLLoader.load(getClass().getResource("../fxml/candidateInfo.fxml"));
-    		Scene scene = new Scene(main,512,540);
+    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/candidateInfo.fxml"));
+    	Scene scene = new Scene(main,512,540);
         	Thread thread = new Thread() {
         		public void run() {
     	    		Stage primaryStage = (Stage) candidate1.getScene().getWindow();
