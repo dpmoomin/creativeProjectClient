@@ -39,7 +39,7 @@ public class liveVoteInfoAddController implements Initializable {
 	@FXML private Text firstCandidateName; // 첫번째(좌측) 후보 이름
 	@FXML private Text secondCandidateName; // 두번째(우측) 후보 이름
 	@FXML private Text firstCandidateNumber; // 첫번째(좌측) 후보 기호
-	@FXML private Text secondCanddiateNumber; // 두번째(우측) 후보 기호
+	@FXML private Text secondCandidateNumber; // 두번째(우측) 후보 기호
 	@FXML private Text firstCandidateParty; // 첫번째(좌측) 후보 정당
 	@FXML private Text secondCandidateParty; // 두번째(좌측) 후보 정당
 	@FXML private Text firstCandidateVote; // 첫번째(좌측) 후보 득표수
@@ -89,8 +89,75 @@ public class liveVoteInfoAddController implements Initializable {
     	}
     	catch(Exception e) { System.out.println("error");}
     }
-    public void setVoteRate(String Rate)
+
+    public void setRegion(String region_in)
     {
-    	voteRate.setText(Rate);
+    	region.setText(region_in);
+    }
+    
+    
+    public void setVoteRate(String rate_in)
+    {
+    	voteRate.setText(rate_in);
+    }
+    
+    public void setVoteCount(String count_in)
+    {
+    	voteCount.setText(count_in);
+    }
+    
+    public void setElectionTitle(String title)
+    {
+    	electionTitle.setText(title);
+    }
+    
+    public void setFirstCandidateName(String name)
+    {
+    	firstCandidateName.setText(name);
+    }
+    
+    public void setSecondCandidateName(String name)
+    {
+    	secondCandidateName.setText(name);
+    }
+    
+    public void setFirstCandidateNumber(String number)
+    {
+    	firstCandidateNumber.setText(number);
+    }
+    
+    public void setSecondCandidateNumber(String number)
+    {
+    	secondCandidateNumber.setText(number);
+    }
+    
+    public void setFirstCandidateParty(String party)
+    {
+    	firstCandidateParty.setText(party);
+    }
+    
+    public void setSecondCandidateParty(String party)
+    {
+    	secondCandidateParty.setText(party);
+    }
+    
+    public void setFirstCandidateVote(String vote)
+    {
+    	firstCandidateVote.setText(vote);
+    }
+    
+    public void setSecondCandidateVote(String vote)
+    {
+    	secondCandidateVote.setText(vote);
+    }
+    
+    public void setFirstCandidateVoteRate(String voteRate)
+    {
+    	firstCandidateVoteRate.setText(voteRate);
+    }
+    
+    public void setSecondCandidateVoteRate(String voteRate)
+    {
+    	secondCandidateVoteRate.setText(voteRate);
     }
 }

@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -61,5 +62,69 @@ public class candidateInfoAddController implements Initializable {
     	sp.setContent(main);
     	}
     	catch(Exception e) { System.out.println("error");}
+    }
+    
+    public void setName(String name_in)
+    {
+    	name.setText(name_in);
+    }
+    
+    public void setNumber(String number_in)
+    {
+    	number.setText(number_in);
+    }
+    
+    public void setPartyName(String partyName_in)
+    {
+    	name.setText(partyName_in);
+    }
+    
+    public void setBirth(String birth_in)
+    {
+    	name.setText(birth_in);
+    }
+    
+    public void setCareer(String career_in)
+    {
+    	name.setText(career_in);
+    }
+    
+    public void setPledge(String pledge_in)
+    {
+    	name.setText(pledge_in);
+    }
+    
+    public void setCandidateImage(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidateImage.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.jpg")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidateImage.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidatePartyImage(String candidate_party_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidatePartyImage.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_party_name +".png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidateImage.setImage(new Image(getClass().getResourceAsStream("../img/흰색_빈공간.png")));
+    		System.out.println("error");}
     }
 }

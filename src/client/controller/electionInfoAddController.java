@@ -11,6 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -81,5 +82,71 @@ public class electionInfoAddController implements Initializable {
     	electionInfo.getChildren().add(main);
     	}
     	catch(Exception e) { System.out.println("error");}
+    }
+    
+    public void setElection1VoteDay(String voteDay_in)
+    {
+    	election1VoteDay.setText(voteDay_in);
+    }
+    
+    public void setElection2VoteDay(String voteDay_in)
+    {
+    	election2VoteDay.setText(voteDay_in);
+    }
+    
+    public void setElection3VoteDay(String voteDay_in)
+    {
+    	election3VoteDay.setText(voteDay_in);
+    }
+    
+    public void setElection1Mark(String election_category)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	election1Mark.setImage(new Image(getClass().getResourceAsStream("../img/"+ election_category +"_사진.jpg")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		election1Mark.setImage(new Image(getClass().getResourceAsStream("../img/흰색_마크.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setElection2Mark(String election_category)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	election2Mark.setImage(new Image(getClass().getResourceAsStream("../img/"+ election_category +"_사진.jpg")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		election2Mark.setImage(new Image(getClass().getResourceAsStream("../img/흰색_마크.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setElection3Mark(String election_category)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	election3Mark.setImage(new Image(getClass().getResourceAsStream("../img/"+ election_category +"_사진.jpg")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		election3Mark.setImage(new Image(getClass().getResourceAsStream("../img/흰색_마크.png")));
+    		System.out.println("error");}
     }
 }
