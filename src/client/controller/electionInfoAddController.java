@@ -1,5 +1,10 @@
 package client.controller;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -22,12 +27,12 @@ public class electionInfoAddController implements Initializable {
 	@FXML private ImageView election2;
 	@FXML private ImageView election3;
 	@FXML private AnchorPane electionInfo;
-	@FXML private Text election1VoteDay; // Ã¹¹øÂ° ¼±°ÅÀÏ
-	@FXML private Text election2VoteDay; // µÎ¹øÂ° ¼±°ÅÀÏ
-	@FXML private Text election3VoteDay; // ¼¼¹øÂ° ¼±°ÅÀÏ
-	@FXML private ImageView election1Mark; // Ã¹¹øÂ° ¼±°Å±¸ºĞ ¸¶Å©
-	@FXML private ImageView election2Mark; // µÎ¹øÂ° ¼±°Å±¸ºĞ ¸¶Å©
-	@FXML private ImageView election3Mark; // ¼¼¹øÂ° ¼±°Å±¸ºĞ ¸¶Å©
+	@FXML private Text election1VoteDay; // ì²«ë²ˆì§¸ ì„ ê±°ì¼
+	@FXML private Text election2VoteDay; // ë‘ë²ˆì§¸ ì„ ê±°ì¼
+	@FXML private Text election3VoteDay; // ì„¸ë²ˆì§¸ ì„ ê±°ì¼
+	@FXML private ImageView election1Mark; // ì²«ë²ˆì§¸ ì„ ê±°êµ¬ë¶„ ë§ˆí¬
+	@FXML private ImageView election2Mark; // ë‘ë²ˆì§¸ ì„ ê±°êµ¬ë¶„ ë§ˆí¬
+	@FXML private ImageView election3Mark; // ì„¸ë²ˆì§¸ ì„ ê±°êµ¬ë¶„ ë§ˆí¬
 
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
@@ -49,6 +54,7 @@ public class electionInfoAddController implements Initializable {
       	     };
         });
     }
+
     
     public void changeElection1()
     {
